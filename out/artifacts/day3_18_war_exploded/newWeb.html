@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        th,td{
+            border: black solid 1px;
+            height: 40px;
+            width: 60px;
+        }
+        table{
+            display: inline;
+        }
+        div{
+            border: #f40 solid 2px;
+            height: 400px;
+            width: 400px;
+        }
+        /*浮动是脱离文档流 其他元素会顶替上去*/
+        /*文字会围绕在浮动元素文档周围*/
+        #div1{
+            float: left;
+            height: 200px;
+            width: 200px;
+        }
+        #div2{
+            float: right;
+        }
+        #div3{
+            /*清除浮动 元素左边或右边不能有浮动*/
+            clear: both;
+        }
+        p{
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            border: black solid thin;
+        }
+        a{
+            display: block;
+            font-size: 40px;
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: blue;
+        }
+        ul{
+            padding-left: 300px;
+            height: 50px;
+            background-color: #f40;
+        }
+        li{
+            list-style: none;
+            float: left;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+<form method="POST" action="#">
+    <label>用户名：</label>
+    <input type="text" name="usernmame" placeholder="用户名"><br/>
+    <label>密码：</label>
+    <input type="password" name="password" placeholder="密码"><br/>
+    <input type="submit" value="提交">
+</form>
+<hr/>
+我是新的页面
+<br/>
+ul 无序列表
+<ul>
+    <li>
+        <a href="">123</a>
+
+    </li>
+    <li><a href="">123</a></li>
+    <li><a href="">123</a></li>
+    <li><a href="">123</a></li>
+    <li><a href="">123</a></li>
+</ul>
+有序排列
+<ol type="I">
+    <li>123</li>
+    <li>234</li>
+    <li>345</li>
+    <li>456</li>
+    <li>567</li>
+    <li>678</li>
+</ol>
+<table style="border: black solid 2px">
+    <thead>
+    <tr>
+        <th>123</th>
+        <th>234</th>
+        <th>345</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>123</td>
+        <td>234</td>
+        <td>12345</td>
+    </tr>
+    <tr>
+        <td>234</td>
+        <td>345</td>
+        <td>小黑</td></tr>
+    <tr></tr>
+    <tr>
+        <td colspan="2">11232</td>
+        <td rowspan="2">154265</td>
+    </tr>
+    <tr>
+        <td>小说</td>
+        <td>后台管理</td>
+    </tr>
+    <tr>
+        <td>李四</td>
+        <td>张三</td>
+        <td>王五</td>
+    </tr>
+    </tbody>
+</table>
+<table style="border: black solid 2px">
+    <thead>
+    <tr>
+        <th colspan="3">学生成绩表</th>
+    </tr>
+    <tr>
+        <th>姓名</th>
+        <th>学科</th>
+        <th>分数</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td rowspan="2">张三</td>
+        <td>语文</td>
+        <td>123</td>
+    </tr>
+    <tr>
+        <td>数学</td>
+        <td>122</td>
+    </tr>
+    <tr></tr>
+    <tr>
+        <td rowspan="2">李四</td>
+        <td>语文</td>
+        <td>133</td>
+    </tr>
+    <tr>
+        <td>数学</td>
+        <td>90</td>
+    </tr>
+    <tr>
+        <td colspan="2">合计</td>
+        <td>分数</td>
+    </tr>
+    </tbody>
+</table>
+<div id="div1">
+    第一个div
+   <!-- 行级元素不能设置宽高
+    块级元素可以设置宽高
+
+    <p>111</p>
+    <p>1111</p>
+    <p>1111</p>
+    <p>1111</p>-->
+</div>
+<div  id="div2">
+    第二个div
+<!--    第二个div
+    <a href="">123</a><a href="">baidu</a><a href="">百度</a><a href="">百度</a>-->
+</div>
+<div  id="div3">
+    第三个div
+</div>
+</body>
+</html>
